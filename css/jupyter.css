@@ -54,6 +54,29 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+section main {
+  background-color: #007bff;
+  display: inline-block;
+  height: 510px;
+  width: min-content;
+}
+
+main h2 {
+  margin-left: 70px;
+}
+
+#cate-choix, option {
+  background-color: #fff;
+	border: #777 1px solid;
+	margin: 0 0 1.5em 0;
+}
+
+select {
+	Border: #53d3aa 1px solid;
+  border-radius: 3px;
+	font-size: 1.2em;
+  padding: 6px 12px;
+}
 
 footer {
   position: absolute;
