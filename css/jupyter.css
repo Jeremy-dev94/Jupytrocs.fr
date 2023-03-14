@@ -1,17 +1,20 @@
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    position: relative;
-  }
-  
+html, body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}  
 header {
+  position: absolute;
+  top: 0;
   background-color: #333;
   color: #fff;
   display: flex;
   align-items: center;
   height: 120px;
   padding: 0 20px;
+  width: 100%;
 }
   
 .head-button {
@@ -54,10 +57,16 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+section {
+  flex: 1 0 auto;
+}
+
 section main {
+  position: absolute;
+  bottom: 0;
   background-color: #007bff;
   display: inline-block;
-  height: 510px;
+  height: 578px;
   width: min-content;
 }
 
@@ -82,17 +91,21 @@ select {
   list-style: none outside none; /* On supprime le style de la liste par défaut */
   margin: 0 auto; /* La galerie est centrée horizontalement */
   padding: 0;
-  left: 250px;
-  top: 200px;
-  width: 480px;
+  background-color: #000;
+  height: 2010px;
+  left: 245px;
+  top: 121px;
+  width: 1270px;
   position: absolute;
   display: flex;
-  float: right;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #thumbs li {
   float: left;
-  height: 112px;
+  height: 152px;
   margin: 0;
   padding: 5px;
   position: relative;
@@ -105,7 +118,7 @@ select {
 }
 
 #thumbs li img {
-  border: 5px solid #fff;
+  border: 2px solid #fff;
   z-index: 100;
   transition: transform 0.25s ease-in-out;
   -moz-transition: -moz-transform 0.25s ease-in-out;
@@ -136,10 +149,10 @@ select {
 
 footer {
   position: absolute;
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  bottom: 0;
+  display: flex;
+  flex-shrink: 0;
+  background-color: #777;
+  color: white;
   width: 100%;
+  bottom: 0;
 }
