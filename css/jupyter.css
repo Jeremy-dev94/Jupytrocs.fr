@@ -3,17 +3,15 @@ html, body {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
 }  
 header {
-  position: absolute;
+  position: relative;
   top: 0;
   background-color: #333;
   color: #fff;
   display: flex;
   align-items: center;
   height: 120px;
-  padding: 0 20px;
   width: 100%;
 }
   
@@ -29,9 +27,10 @@ header {
 .logo img {
   background-color: red;
   position: absolute;
-  top: 5%;
-  left: 5%;
-  height: 40px;
+  top: 30px;
+  left: 60px;
+  height: 50px;
+  width: 50px;
 }
 
 form {
@@ -57,16 +56,12 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-section {
-  flex: 1 0 auto;
-}
-
 section main {
   position: absolute;
   bottom: 0;
   background-color: #007bff;
   display: inline-block;
-  height: 578px;
+  height: 593px;
   width: min-content;
 }
 
@@ -87,15 +82,29 @@ select {
   padding: 6px 12px;
 } 
 
+.my-h2 {
+  display: flex;
+  text-align: justify;
+  color: #fff;
+  left: 500px;
+}
+
+.galerie #thumbs li a {
+  display: inline-block;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
 #thumbs {
   list-style: none outside none; /* On supprime le style de la liste par défaut */
   margin: 0 auto; /* La galerie est centrée horizontalement */
   padding: 0;
   background-color: #000;
-  height: 2010px;
-  left: 245px;
+  height: 1010px;
+  left: 246px;
   top: 121px;
-  width: 1270px;
+  width: 1273px;
   position: absolute;
   display: flex;
   justify-content: flex-start;
@@ -104,10 +113,9 @@ select {
 }
 
 #thumbs li {
-  float: left;
   height: 152px;
-  margin: 0;
-  padding: 5px;
+  margin: 65px;
+  right: 25px;
   position: relative;
   width: 150px;
   z-index: 10;
