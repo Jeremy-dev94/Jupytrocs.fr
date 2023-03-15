@@ -5,7 +5,7 @@ html, body {
   padding: 0;
 }  
 header {
-  position: relative;
+  position: absolute;
   top: 0;
   background-color: #333;
   color: #fff;
@@ -22,8 +22,38 @@ header {
   transform: translateY(-10%);
   right: 20px;
   padding: 1rem;
+  margin: 10px;
 }
-  
+
+.head-button button{
+  position: relative;
+  margin: 10px;
+  border: 3px solid white ;
+  border-radius: 5%;
+}
+
+.btn-co:hover {
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  margin: 10px;
+}
+
+.btn-ins:hover {
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  margin: 10px;
+}
+
+.shearch-bar {
+  display: flex;
+  position: absolute;
+  right: 313px;
+  top: 31px;
+  padding: 0;
+}
+
 .logo img {
   background-color: red;
   position: absolute;
@@ -57,11 +87,12 @@ button[type="submit"] {
 }
 
 section main {
-  position: absolute;
+  position: relative;
   bottom: 0;
+  top: 120px;
   background-color: #007bff;
   display: inline-block;
-  height: 593px;
+  height: 1000px;
   width: min-content;
 }
 
@@ -82,16 +113,17 @@ select {
   padding: 6px 12px;
 } 
 
-.my-h2 {
-  display: flex;
+.galerie .my-h2 {
+  position: absolute;
   text-align: justify;
   color: #fff;
-  left: 500px;
+  left: 700px;
+  top: 80px;
 }
 
 .galerie #thumbs li a {
   display: inline-block;
-  position: relative;
+  position: absolute;
   left: 0px;
   top: 0px;
 }
@@ -100,10 +132,9 @@ select {
   list-style: none outside none; /* On supprime le style de la liste par défaut */
   margin: 0 auto; /* La galerie est centrée horizontalement */
   padding: 0;
-  background-color: #000;
   height: 1010px;
   left: 246px;
-  top: 121px;
+  top: 81px;
   width: 1273px;
   position: absolute;
   display: flex;
@@ -157,7 +188,7 @@ select {
 
 footer {
   position: absolute;
-  display: flex;
+  display: inline;
   flex-shrink: 0;
   background-color: #777;
   color: white;
