@@ -3,6 +3,7 @@ html, body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  height: 100vh;
 }  
 header {
   position: absolute;
@@ -51,7 +52,6 @@ header {
   position: absolute;
   right: 313px;
   top: 31px;
-  padding: 0;
 }
 
 .logo img {
@@ -92,7 +92,7 @@ section main {
   top: 120px;
   background-color: #007bff;
   display: inline-block;
-  height: 1000px;
+  height: 1580px;
   width: min-content;
 }
 
@@ -113,12 +113,17 @@ select {
   padding: 6px 12px;
 } 
 
-.galerie .my-h2 {
+.my-h2 {
   position: absolute;
+  font-weight: bolder;
+  font-size: xx-large;
+  display: block;
+  border: 2px solid #007bff;
   text-align: justify;
-  color: #fff;
-  left: 700px;
-  top: 80px;
+  color: black;
+  left: 823px;
+  top: 99px;
+  padding: 10px;
 }
 
 .galerie #thumbs li a {
@@ -169,10 +174,6 @@ select {
   -webkit-transform: scale(0.75);
 }
 
-#thumbs:hover li img {
-  opacity: 0.5; /* Au survol de la galerie, toute les images auront une opacité de 50% */
-}
-
 #thumbs li:hover img {
   opacity: 1; /* L'image survolée aura une opacité de 100% */
   z-index: 100;
@@ -188,10 +189,10 @@ select {
 
 footer {
   position: absolute;
-  display: inline;
-  flex-shrink: 0;
-  background-color: #777;
+  display: block;
+  background-color: #333;
   color: white;
+  height: 200px;
   width: 100%;
-  bottom: 0;
+  top: 1700px;
 }
