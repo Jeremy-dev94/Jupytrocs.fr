@@ -19,16 +19,15 @@ header {
 .head-button {
   position: absolute;
   justify-content: flex-end;
-  display: flex;
+  display: block;
   transform: translateY(-10%);
   right: 20px;
   padding: 1rem;
-  margin: 10px;
 }
 
 .head-button button{
   position: relative;
-  margin: 10px;
+  margin: 5px;
   border: 3px solid white ;
   border-radius: 5%;
 }
@@ -36,22 +35,19 @@ header {
 .btn-co:hover {
   cursor: pointer;
   height: 50px;
-  width: 100px;
-  margin: 10px;
 }
 
 .btn-ins:hover {
   cursor: pointer;
   height: 50px;
-  width: 100px;
-  margin: 10px;
 }
 
 .shearch-bar {
-  display: flex;
+  display: block;
   position: absolute;
   right: 313px;
   top: 31px;
+  border-radius: 5%;
 }
 
 .logo img {
