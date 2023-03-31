@@ -47,7 +47,20 @@ header {
   position: absolute;
   right: 313px;
   top: 31px;
+}
+
+.shearch-bar, input, button {
   border-radius: 5%;
+}
+
+form, btn-input:hover {
+  cursor: pointer;
+  height: 50px;
+}
+
+btn-bar:hover {
+  cursor: pointer;
+  height: 50px;
 }
 
 .logo img {
@@ -181,6 +194,13 @@ select {
   -moz-box-shadow: 1px 1px 10px #000;
   -o-box-shadow: 1px 1px 10px #000;
   -webkit-box-shadow: 1px 1px 10px #000;
+}
+
+footer, .icone-contact {
+  background-color: red;
+  display: inline;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
