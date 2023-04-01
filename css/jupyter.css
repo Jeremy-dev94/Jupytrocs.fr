@@ -53,12 +53,7 @@ header {
   border-radius: 5%;
 }
 
-form, btn-input:hover {
-  cursor: pointer;
-  height: 50px;
-}
-
-btn-bar:hover {
+.shearch-bar .btn-bar:hover {
   cursor: pointer;
   height: 50px;
 }
